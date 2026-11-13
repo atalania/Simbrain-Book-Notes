@@ -1,0 +1,111 @@
+name: Sync line references with the book
+
+# Low-profile design: the book repository is only contacted with git when it
+# actually has a new commit.
+#  - Every run first asks the GitHub API for the book's latest commit id. API
+#    calls are not counted as clones or visits in the book's traffic statistics.
+#  - Scheduled runs stop right there if the book has not changed.
+#  - The book's clone is kept in this repository's Actions cache. When the book
+#    changes, the cached copy is brought up to date with one incremental fetch
+#    instead of a fresh clone. Runs triggered by your own edits to the notes
+#    reuse the cache and do not touch the book repository at all.
+#  - A full (not partial) clone is used, so the sync script never has to
+#    download extra file contents on demand.
+
+on:
+  # Check the book for new commits every 15 minutes (GitHub may run these a few minutes late).
+  schedule:
+    - cron: "*/15 * * * *"
+  # Run right away whenever you push a change to the notes, so new [[L:...]] tags are registered.
+  push:
+    branches: [main]
+    paths: ["notes/**", "scripts/**", "config.json", "accept.txt"]
+  # "Run workflow" button on the Actions tab.
+  workflow_dispatch:
+  # Optional instant trigger from the book repo (see docs/instant-sync.md).
+  repository_dispatch:
+    types: [book-updated]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-refs
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ask the GitHub API for the book's latest commit
+        id: upstream
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          repo=$(python3 -c 'import json; print(json.load(open("config.json"))["upstream_repo"])')
+          branch=$(python3 -c 'import json; print(json.load(open("config.json")).get("upstream_branch", "main"))')
+          sha=$(gh api "repos/$repo/commits/$branch" --jq .sha)
+          known=$(python3 -c 'import json, os; p=".refs/refs.json"; print(json.load(open(p)).get("upstream_commit", "") if os.path.exists(p) else "")')
+          echo "repo=$repo" >> "$GITHUB_OUTPUT"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$sha" = "$known" ]; then
+            echo "The book is still at ${sha:0:7}; nothing to do."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Restore the cached copy of the book
+        if: steps.upstream.outputs.skip == 'false'
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/book
+          key: book-${{ steps.upstream.outputs.sha }}
+          restore-keys: book-
+
+      - name: Bring the book up to date (only if the cache is missing or older)
+        if: steps.upstream.outputs.skip == 'false' && steps.cache.outputs.cache-hit != 'true'
+        run: |
+          book="$RUNNER_TEMP/book"
+          if [ -d "$book/.git" ]; then
+            echo "Updating the cached copy with one incremental fetch."
+            git -C "$book" fetch --quiet origin
+          else
+            echo "No cached copy yet; cloning once."
+            git clone --quiet --no-checkout "https://github.com/${{ steps.upstream.outputs.repo }}.git" "$book"
+          fi
+
+      - name: Save the updated copy for future runs
+        if: steps.upstream.outputs.skip == 'false' && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/book
+          key: book-${{ steps.upstream.outputs.sha }}
+
+      - name: Update line numbers, section labels and STATUS.md
+        if: steps.upstream.outputs.skip == 'false'
+        run: |
+          python3 scripts/sync_refs.py --upstream "$RUNNER_TEMP/book" \
+            --rev "${{ steps.upstream.outputs.sha }}" --summary-file "$RUNNER_TEMP/summary.txt"
+
+      - name: Commit and push if anything changed
+        if: steps.upstream.outputs.skip == 'false'
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898231+github-actions[bot]@users.noreply.github.com"
+          git add -A notes STATUS.md .refs accept.txt
+          git commit -m "$(cat "$RUNNER_TEMP/summary.txt")"
+          if git pull --rebase && git push; then
+            exit 0
+          fi
+          # Someone pushed at the same moment and the changes overlap. Leave it;
+          # the next run starts from the new state and redoes the sync.
+          git rebase --abort 2>/dev/null || true
+          echo "::warning::Push skipped because the notes changed during the run; the next run will retry."

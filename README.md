@@ -11,7 +11,7 @@ This is a collection of thought experiments and possible research questions rela
 
 ## Line numbers that follow the book
 
-The book's `.tex` files change constantly, so a plain "Line 183" goes stale as soon as someone edits a paragraph above it. In these notes, every line reference is a tracked link. A GitHub Action checks the book every 15 minutes and updates the links. Each link goes to the exact lines in the current version of the book on GitHub.
+The book's `.tex` files change constantly, so a plain "Line 183" goes stale as soon as someone edits a paragraph above it. In these notes, every line reference is a tracked link. A GitHub Action checks the book for changes every 15 minutes and updates the links. Each link goes to the exact lines in the current version of the book on GitHub.
 
 ### How a reference is tracked
 
@@ -23,6 +23,10 @@ When you add a reference, the script saves a short fingerprint: the referenced l
 4. **Reports the result.** Uncertain or missing matches are flagged in the note and listed in [STATUS.md](STATUS.md).
 
 The `§` section labels are regenerated from the `\section` and `\subsection` headings each time, so section numbers stay correct too.
+
+### Staying out of the book's traffic statistics
+
+The 15-minute check asks the GitHub API for the book's latest commit id, and API calls don't appear in a repository's clone or visitor counts. The book repository is only contacted with git when it actually has a new commit. Even then, a cached copy of the book is updated with one small incremental fetch rather than cloned from scratch. Runs triggered by your own edits to the notes reuse the cached copy and don't contact the book at all. The one exception: GitHub deletes caches that haven't been used for 7 days, so after a quiet week the next run clones the book once to rebuild the cache.
 
 ## Writing a reference
 
