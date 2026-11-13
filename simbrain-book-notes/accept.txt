@@ -1,0 +1,5 @@
+# List ref ids here (for example: r017 r018), one or more per line, to accept them
+# after you have checked them in STATUS.md:
+#   ⚠️ or ↪️  -> the flag is cleared and the link stays where it is
+#   ❌         -> the reference is retired and shown as "since removed from the book"
+# The sync empties this file again once it has applied the list.

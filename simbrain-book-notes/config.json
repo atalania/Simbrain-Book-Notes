@@ -1,0 +1,7 @@
+{
+  "upstream_repo": "simbrain/NeuralNetworksCogSciBook",
+  "upstream_branch": "main",
+  "notes": ["notes/**/*.md"],
+  "default_chapter_number": "1",
+  "chapter_numbers": {}
+}

@@ -1,0 +1,1643 @@
+{
+ "refs": {
+  "r001": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 183,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "reasonably sized context.}",
+    "% Some have said that LLMs have anterograde amnesia. See Karpathye.",
+    "% Also working memory, and framing effects, and how the"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 183,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Some have said that LLMs have anterograde amnesia. See Karpathye."
+   }
+  },
+  "r002": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 183,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "reasonably sized context.}",
+    "% Some have said that LLMs have anterograde amnesia. See Karpathye.",
+    "% Also working memory, and framing effects, and how the"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 183,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Some have said that LLMs have anterograde amnesia. See Karpathye."
+   }
+  },
+  "r003": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 190,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "In-context learning is a new capability of neural networks that has only just begun to",
+    "be explored, especially as it relates to cognitive science.\\footnote{An old critique of neural networks, going back to the 1980s, was that while humans can learn things in a single trial, neural networks could not \\cite{schneider1988structure}. Decades later, transformers have shown that neural networks \\emph{can} learn things in a single trial, albeit in networks that are in many ways different from the human brain. It is not currently known how psychologically or neurally realistic these forms of learning are in LLMs.} Having said that,",
+    "traditional parameter-based learning is still the basis of much of the power of"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 190,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "be explored, especially as it relates to cognitive science.\\footnote{An old critique of neural networks, going back to the 1980s, was that while humans can learn things in a single trial, neural networks could not \\cite{schneider1988structure}. Decades later, transformers have shown that neural networks \\emph{can} learn things in a single trial, albeit in networks that are in many ways different from the human brain. It is not currently known how psychologically or neurally realistic these forms of learning are in LLMs.} Having said that,"
+   }
+  },
+  "r004": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 190,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "In-context learning is a new capability of neural networks that has only just begun to",
+    "be explored, especially as it relates to cognitive science.\\footnote{An old critique of neural networks, going back to the 1980s, was that while humans can learn things in a single trial, neural networks could not \\cite{schneider1988structure}. Decades later, transformers have shown that neural networks \\emph{can} learn things in a single trial, albeit in networks that are in many ways different from the human brain. It is not currently known how psychologically or neurally realistic these forms of learning are in LLMs.} Having said that,",
+    "traditional parameter-based learning is still the basis of much of the power of"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 190,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "be explored, especially as it relates to cognitive science.\\footnote{An old critique of neural networks, going back to the 1980s, was that while humans can learn things in a single trial, neural networks could not \\cite{schneider1988structure}. Decades later, transformers have shown that neural networks \\emph{can} learn things in a single trial, albeit in networks that are in many ways different from the human brain. It is not currently known how psychologically or neurally realistic these forms of learning are in LLMs.} Having said that,"
+   }
+  },
+  "r005": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 248,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "look over each picture. Next-token prediction gets around this problem of needing labeled target data, because the",
+    "targets are endogenous to the training data itself.\\footnote{This insight is not new with language models. Neural network models of next-word prediction have been used at least as far back as \\cite{elman1990finding}. Again see chapter \\extref{ch_supervised_recurrent}. }",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 248,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "targets are endogenous to the training data itself.\\footnote{This insight is not new with language models. Neural network models of next-word prediction have been used at least as far back as \\cite{elman1990finding}. Again see chapter \\extref{ch_supervised_recurrent}. }"
+   }
+  },
+  "r006": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 248,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "look over each picture. Next-token prediction gets around this problem of needing labeled target data, because the",
+    "targets are endogenous to the training data itself.\\footnote{This insight is not new with language models. Neural network models of next-word prediction have been used at least as far back as \\cite{elman1990finding}. Again see chapter \\extref{ch_supervised_recurrent}. }",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 248,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "targets are endogenous to the training data itself.\\footnote{This insight is not new with language models. Neural network models of next-word prediction have been used at least as far back as \\cite{elman1990finding}. Again see chapter \\extref{ch_supervised_recurrent}. }"
+   }
+  },
+  "r007": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 718,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025).",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 718,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025)."
+   }
+  },
+  "r008": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 718,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025).",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 718,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025)."
+   }
+  },
+  "r009": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 995,
+   "end": 1002,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "In June 2025 a group at Apple published a paper whose title begins with ``The",
+    "Illusion of Thinking'' \\cite{shojaee2025illusion}, which claims that large",
+    "reasoning models like LLMs ``face a complete accuracy collapse beyond"
+   ],
+   "fp_end": [
+    "controlling for these errors LLMs can succeed on reasoning tasks reported",
+    "as failures in \\cite{shojaee2025illusion}.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 995,
+    "end": 1002,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "Illusion of Thinking'' \\cite{shojaee2025illusion}, which claims that large"
+   }
+  },
+  "r010": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 995,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "In June 2025 a group at Apple published a paper whose title begins with ``The",
+    "Illusion of Thinking'' \\cite{shojaee2025illusion}, which claims that large",
+    "reasoning models like LLMs ``face a complete accuracy collapse beyond"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 995,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "Illusion of Thinking'' \\cite{shojaee2025illusion}, which claims that large"
+   }
+  },
+  "r011": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1042,
+   "end": 1072,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Neuroscience}",
+    ""
+   ],
+   "fp_end": [
+    "generally improves brain scores, on average by 53\\%''",
+    "\\cite{schrimpf2021neural}.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1042,
+    "end": 1072,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Neuroscience}"
+   }
+  },
+  "r012": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1042,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Neuroscience}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1042,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Neuroscience}"
+   }
+  },
+  "r013": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1214,
+   "end": 1221,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "can talk pretty well based on far less data than a trained LLM is exposed to.",
+    "The fact that humans can learn language based on limited input data is",
+    "sometimes used as a ``poverty of the stimulus'' argument against the kind of"
+   ],
+   "fp_end": [
+    "\\emph{are} trained on naturalistically realistic data, they are limited in the",
+    "ways Chomsky and others predicted they should be \\cite{lan2024large}.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1214,
+    "end": 1221,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "The fact that humans can learn language based on limited input data is"
+   }
+  },
+  "r014": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1214,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "can talk pretty well based on far less data than a trained LLM is exposed to.",
+    "The fact that humans can learn language based on limited input data is",
+    "sometimes used as a ``poverty of the stimulus'' argument against the kind of"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1214,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "The fact that humans can learn language based on limited input data is"
+   }
+  },
+  "r015": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1223,
+   "end": 1228,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "Finally, another response is to say that neural networks are in fact processing",
+    "language symbolically. If mechanistic interpretability succeeds, it will have"
+   ],
+   "fp_end": [
+    "We are not yet aware of someone making this argument in print, but it's just a",
+    "matter of time.\\footnote{Consider these quotes from",
+    "\\cite{elhage2021mathematical}: ``Both the attention and MLP layers each"
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1223,
+    "end": 1228,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "Finally, another response is to say that neural networks are in fact processing"
+   }
+  },
+  "r016": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1223,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "Finally, another response is to say that neural networks are in fact processing",
+    "language symbolically. If mechanistic interpretability succeeds, it will have"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1223,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "Finally, another response is to say that neural networks are in fact processing"
+   }
+  },
+  "r017": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1330,
+   "end": 1334,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "% These topics are discussed further in the chapter on value alignment \\extref{ch_ai_alignment}.",
+    "% TODO: Add link to that chapter when we have it. Lupyan notes, esp on what",
+    "% GPT3 was like and the role of fine tuning Reference back to Elman and staged"
+   ],
+   "fp_end": [
+    "% idea of things you know deeply in your bones from way back vs more recently",
+    "% learned",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1330,
+    "end": 1334,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% TODO: Add link to that chapter when we have it. Lupyan notes, esp on what"
+   }
+  },
+  "r018": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1330,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "% These topics are discussed further in the chapter on value alignment \\extref{ch_ai_alignment}.",
+    "% TODO: Add link to that chapter when we have it. Lupyan notes, esp on what",
+    "% GPT3 was like and the role of fine tuning Reference back to Elman and staged"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1330,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% TODO: Add link to that chapter when we have it. Lupyan notes, esp on what"
+   }
+  },
+  "r019": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1398,
+   "end": 1406,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "This is close to an old idea in embodied cognitive science that we don't solve",
+    "problems on our own, but only do so in the context of environmental artifacts."
+   ],
+   "fp_end": [
+    "computation. In a similar way the LLM is spitting out results that then get",
+    "fed back to it, which help it reason its way through problems.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1398,
+    "end": 1406,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "This is close to an old idea in embodied cognitive science that we don't solve"
+   }
+  },
+  "r020": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1398,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "This is close to an old idea in embodied cognitive science that we don't solve",
+    "problems on our own, but only do so in the context of environmental artifacts."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1398,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "This is close to an old idea in embodied cognitive science that we don't solve"
+   }
+  },
+  "r021": {
+   "kind": "l",
+   "file": "Transformers.tex",
+   "start": 718,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025).",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 718,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This is due for an update. The word norms are not the most immediately gripping example. And there is of course a ton of new work already (as of 2025)."
+   }
+  },
+  "r022": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 9,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Make sure post-training is defined in transformer chapter too",
+    "% More back refs to other chapters"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 9,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Make sure post-training is defined in transformer chapter too"
+   }
+  },
+  "r023": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 9,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Make sure post-training is defined in transformer chapter too",
+    "% More back refs to other chapters"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 9,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Make sure post-training is defined in transformer chapter too"
+   }
+  },
+  "r024": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 22,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "This chapter is about alignment and \\glossary{post-training}, which encompasses all the things that happen to change a \\glossary{base model} into a \\glossary{chat model} with a personality. Post-training includes reinforcement learning from human feedback (RLHF) as well as other methods of fine-tuning. These ideas were introduced in chapter \\extref{ch_transformers} but are developed further here, because these ideas originate in AI alignment and continue to be a primary tool used to support alignment research. RLHF was introduced by Paul Christiano as an explicit alignment proposal, and in fact the very concept of a conversational AI system was articulated in early alignment-oriented work, such as Anthropic’s first papers on steerable chat models. The push for ``reasoning-like'' behavior in LLMs (chain-of-thought, step-by-step solutions, tool use, etc.) also came out of alignment circles. The goal was to make models more truthful and reliable, not just more verbose. Also, this “reasoning” in LLMs is often unlocked in post-training, via RLHF, supervised fine-tuning on reasoning traces, reward models grading multi-step answers, etc. So this chapter not only introduces an important set of concerns surrounding intelligent neural networks, it also helps spell out the full industry pipeline transformer architectures are embedded in.",
+    "% Maybe the technical pipeline bit should be a separate section"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 22,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "This chapter is about alignment and \\glossary{post-training}, which encompasses all the things that happen to change a \\glossary{base model} into a \\glossary{chat model} with a personality. Post-training includes reinforcement learning from human feedback (RLHF) as well as other methods of fine-tuning. These ideas were introduced in chapter \\extref{ch_transformers} but are developed further here, because these ideas originate in AI alignment and continue to be a primary tool used to support alignment research. RLHF was introduced by Paul Christiano as an explicit alignment proposal, and in fact the very concept of a conversational AI system was articulated in early alignment-oriented work, such as Anthropic’s first papers on steerable chat models. The push for ``reasoning-like'' behavior in LLMs (chain-of-thought, step-by-step solutions, tool use, etc.) also came out of alignment circles. The goal was to make models more truthful and reliable, not just more verbose. Also, this “reasoning” in LLMs is often unlocked in post-training, via RLHF, supervised fine-tuning on reasoning traces, reward models grading multi-step answers, etc. So this chapter not only introduces an important set of concerns surrounding intelligent neural networks, it also helps spell out the full industry pipeline transformer architectures are embedded in."
+   }
+  },
+  "r025": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 11,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "% More back refs to other chapters",
+    "% Discuss prompt alignment?",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 11,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Discuss prompt alignment?"
+   }
+  },
+  "r026": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 11,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "% More back refs to other chapters",
+    "% Discuss prompt alignment?",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 11,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Discuss prompt alignment?"
+   }
+  },
+  "r027": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 344,
+   "end": 422,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "% Why were they doing this? They cared about Alignment but did not have agnetic systems. SO hey let's make these base models role play being agentic. And that is a foundation of chat!",
+    "The concept of the helpful LLM personal assistant originates in an experimental",
+    "proposal for AI alignment. Anthropic's paper is titled ``A General Language"
+   ],
+   "fp_end": [
+    "for the AI paradigm we are worried about. The idea of fine-tuning for, instead",
+    "of just prompting for, a fictional AI assistant is also suggested here.",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 344,
+    "end": 422,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "The concept of the helpful LLM personal assistant originates in an experimental"
+   }
+  },
+  "r028": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 20,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 20,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff."
+   }
+  },
+  "r029": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 20,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 20,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff."
+   }
+  },
+  "r030": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 87,
+   "end": 90,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% There are very abstract issues that come up when we try to design agent systems. Compare abstract microeconomic models or game theory models and it's interesting to see that they do actually describes bees, cells, etc.",
+    "% Bottom line is unanticipated consequences from just behavioral selection. **"
+   ],
+   "fp_end": [
+    "% Agent foundations is like decision theory + GOFAI. It has gone away mostly. This is all separate from LLMs. A relatively small field. Interesting theoretical results. Abstractly an agent is a guy with a goal with a model of the world. But the agent is itself in the world. Can't embed the whole world in the head, so a problem. So a problem with world model as such.",
+    "% But something closer to alignment. Corrigibility is being correctable (favor that term?). It means we don't care if another agent shuts us down. Want the agent to have an off switch. We want the agent to go out in the world and not mess with the button. Be indifferent to another agent turning it off or on. But agents that want to do things will care about the button. Hard to make clean decisions theoretic sense of this.",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 87,
+    "end": 90,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% There are very abstract issues that come up when we try to design agent systems. Compare abstract microeconomic models or game theory models and it's interesting to see that they do actually describes bees, cells, etc."
+   }
+  },
+  "r031": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 87,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% There are very abstract issues that come up when we try to design agent systems. Compare abstract microeconomic models or game theory models and it's interesting to see that they do actually describes bees, cells, etc.",
+    "% Bottom line is unanticipated consequences from just behavioral selection. **"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 87,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% There are very abstract issues that come up when we try to design agent systems. Compare abstract microeconomic models or game theory models and it's interesting to see that they do actually describes bees, cells, etc."
+   }
+  },
+  "r032": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 164,
+   "end": 169,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% GPT-2 does not have a complete personality. It's like auto-complete on",
+    "% steroids. They will insult you and do other unusual things emulating stuff on"
+   ],
+   "fp_end": [
+    "% “raw” personality of these is. It’s a world model, but a giant conflagration",
+    "% of personalities too. Nothing at all consistent.",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 164,
+    "end": 169,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% GPT-2 does not have a complete personality. It's like auto-complete on"
+   }
+  },
+  "r033": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 164,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% GPT-2 does not have a complete personality. It's like auto-complete on",
+    "% steroids. They will insult you and do other unusual things emulating stuff on"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 164,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% GPT-2 does not have a complete personality. It's like auto-complete on"
+   }
+  },
+  "r034": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 196,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "world, not an agent of any sort. GPT-2 and GPT-3, for example, are base",
+    "models.\\footnote{GPT-2 is an open-weight model and is available online in its",
+    "several sizes here: \\weburl{https://huggingface.co/openai-community}.} The"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 196,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "models.\\footnote{GPT-2 is an open-weight model and is available online in its"
+   }
+  },
+  "r035": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 218,
+   "end": 274,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\begin{quote}",
+    "\\textbf{At this year's Spiel des Jahres, the 2020 board game award was given to"
+   ],
+   "fp_end": [
+    "Get MEL Magazine.",
+    "\\end{quote}",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 218,
+    "end": 274,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\begin{quote}"
+   }
+  },
+  "r036": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 182,
+   "end": 185,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% type error is from computer science. like sending a string to an int function.",
+    "% links to gpt2 are so you can play with what they look like without a personality. you can download and play with a base model."
+   ],
+   "fp_end": [
+    "% everything used to be base models.",
+    "% Think about use of schizophrenic",
+    "In fact, the frontier models were not just born with the personalities that"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 182,
+    "end": 185,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% type error is from computer science. like sending a string to an int function."
+   }
+  },
+  "r037": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 182,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% type error is from computer science. like sending a string to an int function.",
+    "% links to gpt2 are so you can play with what they look like without a personality. you can download and play with a base model."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 182,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% type error is from computer science. like sending a string to an int function."
+   }
+  },
+  "r038": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 198,
+   "end": 199,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "several sizes here: \\weburl{https://huggingface.co/openai-community}.} The",
+    "experience of interacting with them is something like the experience of",
+    "interacting with a severe schizophrenic. Base models are a kind of ultra-scale"
+   ],
+   "fp_end": [
+    "experience of interacting with them is something like the experience of",
+    "interacting with a severe schizophrenic. Base models are a kind of ultra-scale",
+    "auto-complete: they are trained on the entirety of text on the internet, with"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 198,
+    "end": 199,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "experience of interacting with them is something like the experience of"
+   }
+  },
+  "r039": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 216,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Some base model text as an example. The bold part is the prompt and we get a typical base model continuation. It is not a character, it is not a person. It just makes up a quasi-coherent board game magazine thing. It makes up links, the site foother, etc. because that's what you see on the internet [maybe reuse some of this in transformer chapter]",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 216,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Some base model text as an example. The bold part is the prompt and we get a typical base model continuation. It is not a character, it is not a person. It just makes up a quasi-coherent board game magazine thing. It makes up links, the site foother, etc. because that's what you see on the internet [maybe reuse some of this in transformer chapter]"
+   }
+  },
+  "r040": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 216,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Some base model text as an example. The bold part is the prompt and we get a typical base model continuation. It is not a character, it is not a person. It just makes up a quasi-coherent board game magazine thing. It makes up links, the site foother, etc. because that's what you see on the internet [maybe reuse some of this in transformer chapter]",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 216,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Some base model text as an example. The bold part is the prompt and we get a typical base model continuation. It is not a character, it is not a person. It just makes up a quasi-coherent board game magazine thing. It makes up links, the site foother, etc. because that's what you see on the internet [maybe reuse some of this in transformer chapter]"
+   }
+  },
+  "r041": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 13,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Reduce length of example in 1.2 and 1.2. and 1.3. David is ok with that.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 13,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Reduce length of example in 1.2 and 1.2. and 1.3. David is ok with that."
+   }
+  },
+  "r042": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 287,
+   "end": 290,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Cohere with language chapter",
+    "% This is based on what may be Shannon's second most famous paper. Someone tabulates a whole book. He is looking at stats of English model. Write down frequency of every word. Then every bigram. If you continue this you see the trade off in capturing longer and longer range regularities. But takes more and more work. Longer and longer tables. That is what a base model is, a compressed statistical model of ngram dependencies."
+   ],
+   "fp_end": [
+    "% [This might be better as background for the transformer chapter.] The idea here is that transformers realize this old vision. They manage this tradeoff. They can be efficiently trained in a massive parallel way. Also hardware.",
+    "% Another way to say it. If compute were no object, we could just take the conditional distribution of next token relative to all text to that point. It turns out a base model does this in an efficient way. Easy to hear about this abstractly and say ok. But it's a big deal. It can produce competent language.",
+    "The base model idea---a statistical model of the human text corpus---is not"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 287,
+    "end": 290,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Cohere with language chapter"
+   }
+  },
+  "r043": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 287,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Cohere with language chapter",
+    "% This is based on what may be Shannon's second most famous paper. Someone tabulates a whole book. He is looking at stats of English model. Write down frequency of every word. Then every bigram. If you continue this you see the trade off in capturing longer and longer range regularities. But takes more and more work. Longer and longer tables. That is what a base model is, a compressed statistical model of ngram dependencies."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 287,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Cohere with language chapter"
+   }
+  },
+  "r044": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 429,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "your hand at next-token prediction of internet text:",
+    "\\weburl{https://rr-lm-game.herokuapp.com/}. It is extraordinarily difficult, far",
+    "more so than you'd expect from just participating ordinarily on the internet.}"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 429,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\weburl{https://rr-lm-game.herokuapp.com/}. It is extraordinarily difficult, far"
+   }
+  },
+  "r045": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 310,
+   "end": 313,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "\\subsection{Pre-Training vs.\\ Post-Training}",
+    "% So a new thing was needed, ''personality engendering'' (I guess turn-taking",
+    "% and length of responses also came out of this, right?) The helpful assistant"
+   ],
+   "fp_end": [
+    "% persona we are used to didn’t just happen automatically. That took work. Also",
+    "% we will probably want to say something somewhere about... system prompts.",
+    "Where do the chat model personalities that we are all familiar with come from,"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 310,
+    "end": 313,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% So a new thing was needed, ''personality engendering'' (I guess turn-taking"
+   }
+  },
+  "r046": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 310,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "\\subsection{Pre-Training vs.\\ Post-Training}",
+    "% So a new thing was needed, ''personality engendering'' (I guess turn-taking",
+    "% and length of responses also came out of this, right?) The helpful assistant"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 310,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% So a new thing was needed, ''personality engendering'' (I guess turn-taking"
+   }
+  },
+  "r047": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 342,
+   "end": 343,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Below is what we would now call a system prompt. It had 10 prompts. 2 are shown below. And this was enough to get it talking. Because before that you would just get base model randomness.",
+    "% Why were they doing this? They cared about Alignment but did not have agnetic systems. SO hey let's make these base models role play being agentic. And that is a foundation of chat!"
+   ],
+   "fp_end": [
+    "% Below is what we would now call a system prompt. It had 10 prompts. 2 are shown below. And this was enough to get it talking. Because before that you would just get base model randomness.",
+    "% Why were they doing this? They cared about Alignment but did not have agnetic systems. SO hey let's make these base models role play being agentic. And that is a foundation of chat!",
+    "The concept of the helpful LLM personal assistant originates in an experimental"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 342,
+    "end": 343,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Below is what we would now call a system prompt. It had 10 prompts. 2 are shown below. And this was enough to get it talking. Because before that you would just get base model randomness."
+   }
+  },
+  "r048": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 342,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Below is what we would now call a system prompt. It had 10 prompts. 2 are shown below. And this was enough to get it talking. Because before that you would just get base model randomness.",
+    "% Why were they doing this? They cared about Alignment but did not have agnetic systems. SO hey let's make these base models role play being agentic. And that is a foundation of chat!"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 342,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Below is what we would now call a system prompt. It had 10 prompts. 2 are shown below. And this was enough to get it talking. Because before that you would just get base model randomness."
+   }
+  },
+  "r049": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 435,
+   "end": 437,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "assistant personality actually comes automatically when prompted for in a good",
+    "enough base model. The problem is instead that the base model goes on",
+    "simulating the human user part as well, running away with the simulated"
+   ],
+   "fp_end": [
+    "simulating the human user part as well, running away with the simulated",
+    "conversation \\cite{edwards2024voice}. Or, another characteristic failure of the",
+    "models is mode collapse\\footnote{So-called in reference to the statistical"
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 435,
+    "end": 437,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "enough base model. The problem is instead that the base model goes on"
+   }
+  },
+  "r050": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 501,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This cuts a lot of people out of the loop",
+    "An important variation on RLHF, due to Anthropic, is Reinforcement Learning"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 501,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This cuts a lot of people out of the loop"
+   }
+  },
+  "r051": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 501,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This cuts a lot of people out of the loop",
+    "An important variation on RLHF, due to Anthropic, is Reinforcement Learning"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 501,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This cuts a lot of people out of the loop"
+   }
+  },
+  "r052": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 20,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 20,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% RLFH. Initially there is a person grading a bunch of stuff. That is used to create a reward model. That is a map from goodness [chats?] to reward. Then you fine tune an existing chat model against that reward model. // Generate a sample chat. The model completes. Find the reward from reward model. Then backprop the reward through. Then iterate until you get mostly friendly answers, or higher reward on the reward model. // They do goodheart and get high scores and sycophancies. // What is the range of things they use this with? Not just politeness. Is the range of things they use their reward. Anthropic has stuff on this. See \"helpful, harmless, honest, \" the three H's. But there is a richer story. They have a whole constitution for every model. This is who you are, this is what you care about it. It's a ton of stuff."
+   }
+  },
+  "r053": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 678,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% In general, reward hacking means training a model to get a high reward in a way that you did not intend and did not, and you must patch afterwards. Famous example is the RL speedboat, and you do reward shaping. They want the boat to go around the track. It turns out the boat finds a nice little cluster of reward bumps and goes in a tight circle and gives up on winning the race. High reward. // Claude writing tests that are hard coded to pass or otherwise cheats. // I am reminded of Goodheart's law. If you start optimizing against a metric it stops being a good proxy.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 678,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% In general, reward hacking means training a model to get a high reward in a way that you did not intend and did not, and you must patch afterwards. Famous example is the RL speedboat, and you do reward shaping. They want the boat to go around the track. It turns out the boat finds a nice little cluster of reward bumps and goes in a tight circle and gives up on winning the race. High reward. // Claude writing tests that are hard coded to pass or otherwise cheats. // I am reminded of Goodheart's law. If you start optimizing against a metric it stops being a good proxy."
+   }
+  },
+  "r054": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 678,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% In general, reward hacking means training a model to get a high reward in a way that you did not intend and did not, and you must patch afterwards. Famous example is the RL speedboat, and you do reward shaping. They want the boat to go around the track. It turns out the boat finds a nice little cluster of reward bumps and goes in a tight circle and gives up on winning the race. High reward. // Claude writing tests that are hard coded to pass or otherwise cheats. // I am reminded of Goodheart's law. If you start optimizing against a metric it stops being a good proxy.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 678,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% In general, reward hacking means training a model to get a high reward in a way that you did not intend and did not, and you must patch afterwards. Famous example is the RL speedboat, and you do reward shaping. They want the boat to go around the track. It turns out the boat finds a nice little cluster of reward bumps and goes in a tight circle and gives up on winning the race. High reward. // Claude writing tests that are hard coded to pass or otherwise cheats. // I am reminded of Goodheart's law. If you start optimizing against a metric it stops being a good proxy."
+   }
+  },
+  "r055": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 729,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "engineering. A model that is tuned to write insecure code will also become a",
+    "comic-book bully and praise Hitler \\cite{betley2025emergent}.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 729,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "comic-book bully and praise Hitler \\cite{betley2025emergent}."
+   }
+  },
+  "r056": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 759,
+   "end": 761,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Superintelligent is usually defined to more intelligent than any human. Being inhumaly good. E.g finding thing in a seemingly uniformative image. Or about the user from small amounts of text",
+    "% superintelligence alignment is they are doing weird things, is that what we want? For now it's fine. Claude does weird things, ok I just ignore it or undo it. But what happens when they are MUCH smarter? That was a project from the begining in these companies. Woven into their DNA."
+   ],
+   "fp_end": [
+    "% superintelligence alignment is they are doing weird things, is that what we want? For now it's fine. Claude does weird things, ok I just ignore it or undo it. But what happens when they are MUCH smarter? That was a project from the begining in these companies. Woven into their DNA.",
+    "% This is non-cogsci in being nonhuman, but still cogsci iin that cogsci cares about intelligence. Cogsci already looks at how insects are related to mamals and to humans, why not also superinteliligent systems",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 759,
+    "end": 761,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Superintelligent is usually defined to more intelligent than any human. Being inhumaly good. E.g finding thing in a seemingly uniformative image. Or about the user from small amounts of text"
+   }
+  },
+  "r057": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 759,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Superintelligent is usually defined to more intelligent than any human. Being inhumaly good. E.g finding thing in a seemingly uniformative image. Or about the user from small amounts of text",
+    "% superintelligence alignment is they are doing weird things, is that what we want? For now it's fine. Claude does weird things, ok I just ignore it or undo it. But what happens when they are MUCH smarter? That was a project from the begining in these companies. Woven into their DNA."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 759,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Superintelligent is usually defined to more intelligent than any human. Being inhumaly good. E.g finding thing in a seemingly uniformative image. Or about the user from small amounts of text"
+   }
+  },
+  "r058": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 779,
+   "end": 784,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This is the field where we say ok if we can't align them; can we still get useful help when they are super intelligent. The motivating idea is that we won't crack alignment before they are smarter than us. Is there a way to have _untrusted alignemtn_ help us. Control the dragon even thought it can kill you.",
+    "% A bit like cybersecurity. The untrusted model is smarter; the trusted model is dumber but we can count on it. Can we use the trusted model to review outputs so that every time we are safe. So two models."
+   ],
+   "fp_end": [
+    "% But it's a bit like applied cognitive science. Knowing a bit about what intellligence and internal processing of a cognitive system are, including a superintelligent one, could inform how this work goes",
+    "% The chain of thought monitoring is more centrally cog-sci. A bit like old Newell and Simon probe. Are we mind-reading. Are we \"looking\" in the AI's mind? You can sometimes change reasoning and change results.",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 779,
+    "end": 784,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This is the field where we say ok if we can't align them; can we still get useful help when they are super intelligent. The motivating idea is that we won't crack alignment before they are smarter than us. Is there a way to have _untrusted alignemtn_ help us. Control the dragon even thought it can kill you."
+   }
+  },
+  "r059": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 779,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This is the field where we say ok if we can't align them; can we still get useful help when they are super intelligent. The motivating idea is that we won't crack alignment before they are smarter than us. Is there a way to have _untrusted alignemtn_ help us. Control the dragon even thought it can kill you.",
+    "% A bit like cybersecurity. The untrusted model is smarter; the trusted model is dumber but we can count on it. Can we use the trusted model to review outputs so that every time we are safe. So two models."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 779,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This is the field where we say ok if we can't align them; can we still get useful help when they are super intelligent. The motivating idea is that we won't crack alignment before they are smarter than us. Is there a way to have _untrusted alignemtn_ help us. Control the dragon even thought it can kill you."
+   }
+  },
+  "r060": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 836,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Models' situational awareness",
+    "Frontier models are very good at accurately guessing what environment they are"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 836,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Models' situational awareness"
+   }
+  },
+  "r061": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 836,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Models' situational awareness",
+    "Frontier models are very good at accurately guessing what environment they are"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 836,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Models' situational awareness"
+   }
+  },
+  "r062": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 844,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% CoT monitoring; faithfulness",
+    "Because reasoning models think out loud, supervisors can just directly monitor"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 844,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% CoT monitoring; faithfulness"
+   }
+  },
+  "r063": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 844,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% CoT monitoring; faithfulness",
+    "Because reasoning models think out loud, supervisors can just directly monitor"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 844,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% CoT monitoring; faithfulness"
+   }
+  },
+  "r064": {
+   "kind": "L",
+   "file": "AI_Alignment.tex",
+   "start": 890,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Deep Utopia, CEV",
+    "The other view at the frontier labs takes that word ``aligned'', in aligned"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 890,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Deep Utopia, CEV"
+   }
+  },
+  "r065": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 890,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Deep Utopia, CEV",
+    "The other view at the frontier labs takes that word ``aligned'', in aligned"
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 890,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Deep Utopia, CEV"
+   }
+  },
+  "r066": {
+   "kind": "l",
+   "file": "AI_Alignment.tex",
+   "start": 697,
+   "end": 712,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "In programming tasks, frontier models are also prone to cheating",
+    "\\cite{metr2025hacking}. For example, when tasked with writing a software module"
+   ],
+   "fp_end": [
+    "actually given, the model may nevertheless opt for the shortcutting",
+    "interpretation.",
+    ""
+   ],
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 697,
+    "end": 712,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "In programming tasks, frontier models are also prone to cheating"
+   }
+  },
+  "r067": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1272,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This section will be separated and combined with some of the fine tuning information in the ai alignment chapter",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1272,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This section will be separated and combined with some of the fine tuning information in the ai alignment chapter"
+   }
+  },
+  "r068": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1272,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% This section will be separated and combined with some of the fine tuning information in the ai alignment chapter",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1272,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% This section will be separated and combined with some of the fine tuning information in the ai alignment chapter"
+   }
+  },
+  "r069": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1274,
+   "end": 1276,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Most chat models have special tokens and meta-data. After all the model needs to know what was said by a human user vs what it said itself, and much more. It must be able to send out directions to external tools and be able to search the internet etc. OpenAI has a very comment format for this. JSON is what is often used. Thus the model learns to spit out json, and then that is interpreted by the program.",
+    ""
+   ],
+   "fp_end": [
+    "",
+    "% Discuss harnesses, including learned ones. Example https://pi.dev/. Describe how to set one up and run it using paid tokens. This can be useful. Maybe post a link to a simple example on github.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1274,
+    "end": 1276,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Most chat models have special tokens and meta-data. After all the model needs to know what was said by a human user vs what it said itself, and much more. It must be able to send out directions to external tools and be able to search the internet etc. OpenAI has a very comment format for this. JSON is what is often used. Thus the model learns to spit out json, and then that is interpreted by the program."
+   }
+  },
+  "r070": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1274,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Most chat models have special tokens and meta-data. After all the model needs to know what was said by a human user vs what it said itself, and much more. It must be able to send out directions to external tools and be able to search the internet etc. OpenAI has a very comment format for this. JSON is what is often used. Thus the model learns to spit out json, and then that is interpreted by the program.",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1274,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Most chat models have special tokens and meta-data. After all the model needs to know what was said by a human user vs what it said itself, and much more. It must be able to send out directions to external tools and be able to search the internet etc. OpenAI has a very comment format for this. JSON is what is often used. Thus the model learns to spit out json, and then that is interpreted by the program."
+   }
+  },
+  "r071": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1278,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% A fun example of a prompting strategy is caveman mode to save tokens. . https://github.com/JuliusBrussee/caveman/blob/main/README.md",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1278,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% A fun example of a prompting strategy is caveman mode to save tokens. . https://github.com/JuliusBrussee/caveman/blob/main/README.md"
+   }
+  },
+  "r072": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1278,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% A fun example of a prompting strategy is caveman mode to save tokens. . https://github.com/JuliusBrussee/caveman/blob/main/README.md",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1278,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% A fun example of a prompting strategy is caveman mode to save tokens. . https://github.com/JuliusBrussee/caveman/blob/main/README.md"
+   }
+  },
+  "r073": {
+   "kind": "L",
+   "file": "Transformers.tex",
+   "start": 1464,
+   "end": 1486,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Society of mind Ron Sun: https://arxiv.org/abs/2410.20037 Mixture of Experts",
+    ""
+   ],
+   "fp_end": [
+    "% https://arxiv.org/html/2405.02957v3 The relevance here is to the old cogsci",
+    "% debates of merging AI and Connectionism.",
+    ""
+   ],
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1464,
+    "end": 1486,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Society of mind Ron Sun: https://arxiv.org/abs/2410.20037 Mixture of Experts"
+   }
+  },
+  "r074": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1464,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "% Society of mind Ron Sun: https://arxiv.org/abs/2410.20037 Mixture of Experts",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1464,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "% Society of mind Ron Sun: https://arxiv.org/abs/2410.20037 Mixture of Experts"
+   }
+  }
+ },
+ "upstream_commit": "1371c5da040ff388fde37e438f47b625a71e13f8"
+}
