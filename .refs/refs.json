@@ -1637,6 +1637,678 @@
     "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
     "text": "% Society of mind Ron Sun: https://arxiv.org/abs/2410.20037 Mixture of Experts"
    }
+  },
+  "r075": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 154,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{In-Context Processing}\\label{inContext}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 154,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{In-Context Processing}\\label{inContext}"
+   }
+  },
+  "r076": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 239,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Training Using Next-Word Prediction}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 239,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Training Using Next-Word Prediction}"
+   }
+  },
+  "r077": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 366,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{How Conversations Are Generated Using Next-Token Predictions}\\label{recursiveTrick}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 366,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{How Conversations Are Generated Using Next-Token Predictions}\\label{recursiveTrick}"
+   }
+  },
+  "r078": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 713,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs and the Cognitive Sciences}\\label{llm_cogsci}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 713,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs and the Cognitive Sciences}\\label{llm_cogsci}"
+   }
+  },
+  "r079": {
+   "kind": "§",
+   "file": "Transformers.tex",
+   "start": 1270,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs in Practice}\\label{transformersInPractice}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1270,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs in Practice}\\label{transformersInPractice}"
+   }
+  },
+  "r080": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 154,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{In-Context Processing}\\label{inContext}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 154,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{In-Context Processing}\\label{inContext}"
+   }
+  },
+  "r081": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1270,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs in Practice}\\label{transformersInPractice}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1270,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs in Practice}\\label{transformersInPractice}"
+   }
+  },
+  "r082": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 239,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Training Using Next-Word Prediction}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 239,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Training Using Next-Word Prediction}"
+   }
+  },
+  "r083": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1042,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Neuroscience}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1042,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Neuroscience}"
+   }
+  },
+  "r084": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 713,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs and the Cognitive Sciences}\\label{llm_cogsci}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 713,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs and the Cognitive Sciences}\\label{llm_cogsci}"
+   }
+  },
+  "r085": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1270,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs in Practice}\\label{transformersInPractice}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1270,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs in Practice}\\label{transformersInPractice}"
+   }
+  },
+  "r086": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 154,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{In-Context Processing}\\label{inContext}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 154,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{In-Context Processing}\\label{inContext}"
+   }
+  },
+  "r087": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1042,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Neuroscience}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1042,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Neuroscience}"
+   }
+  },
+  "r088": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1100,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1100,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}"
+   }
+  },
+  "r089": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 154,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{In-Context Processing}\\label{inContext}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 154,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{In-Context Processing}\\label{inContext}"
+   }
+  },
+  "r090": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 154,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{In-Context Processing}\\label{inContext}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 154,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{In-Context Processing}\\label{inContext}"
+   }
+  },
+  "r091": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 819,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Behavioral Sciences}\\label{llmsBehavioral}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 819,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Behavioral Sciences}\\label{llmsBehavioral}"
+   }
+  },
+  "r092": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1042,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Neuroscience}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1042,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Neuroscience}"
+   }
+  },
+  "r093": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1100,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1100,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}"
+   }
+  },
+  "r094": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1293,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{Pretraining, Post-Training, and Fine-Tuning}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1293,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{Pretraining, Post-Training, and Fine-Tuning}"
+   }
+  },
+  "r095": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1270,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs in Practice}\\label{transformersInPractice}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1270,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs in Practice}\\label{transformersInPractice}"
+   }
+  },
+  "r096": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1336,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{Prompt Engineering}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1336,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{Prompt Engineering}"
+   }
+  },
+  "r097": {
+   "kind": "s",
+   "file": "AI_Alignment.tex",
+   "start": 610,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{Hallucination, Sycophancy, and Model Pathologies}",
+    "Frontier chat models exhibit a whole slew of personality quirks and traits."
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 610,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{Hallucination, Sycophancy, and Model Pathologies}"
+   }
+  },
+  "r098": {
+   "kind": "s",
+   "file": "AI_Alignment.tex",
+   "start": 676,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{Model Misalignment and Reward Hacking ``in the Wild''}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 676,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{Model Misalignment and Reward Hacking ``in the Wild''}"
+   }
+  },
+  "r099": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 27,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{History}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 27,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{History}"
+   }
+  },
+  "r100": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 162,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Base Models and Chat Models}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 162,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Base Models and Chat Models}"
+   }
+  },
+  "r101": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 194,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Learning to Speak Internetese}\\label{internetese}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 194,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Learning to Speak Internetese}\\label{internetese}"
+   }
+  },
+  "r102": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1336,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{Prompt Engineering}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1336,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{Prompt Engineering}"
+   }
+  },
+  "r103": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 597,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Prosaic Alignment}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 597,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Prosaic Alignment}"
+   }
+  },
+  "r104": {
+   "kind": "§",
+   "file": "AI_Alignment.tex",
+   "start": 757,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{Superintelligence Alignment}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "AI_Alignment.tex",
+    "start": 757,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{Superintelligence Alignment}"
+   }
+  },
+  "r105": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1270,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\section{LLMs in Practice}\\label{transformersInPractice}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1270,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\section{LLMs in Practice}\\label{transformersInPractice}"
+   }
+  },
+  "r106": {
+   "kind": "s",
+   "file": "Transformers.tex",
+   "start": 1100,
+   "end": null,
+   "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+   "status": "exact",
+   "fp_start": [
+    "",
+    "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}",
+    ""
+   ],
+   "fp_end": null,
+   "orig": {
+    "file": "Transformers.tex",
+    "start": 1100,
+    "end": null,
+    "commit": "1371c5da040ff388fde37e438f47b625a71e13f8",
+    "text": "\\subsection{LLMs and Philosophy}\\label{llmPhilosophy}"
+   }
   }
  },
  "upstream_commit": "1371c5da040ff388fde37e438f47b625a71e13f8"

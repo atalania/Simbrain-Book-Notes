@@ -4,7 +4,7 @@ Suggestions keyed to line numbers in `Transformers.tex` (chapter: Transformer Ar
 
 ## Line-by-line suggestions
 
-### 1.1 In-Context Processing
+### <!--ref:r075-->[§1.1 In-Context Processing](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref-->
 
 **<!--ref:r001-->[Line 183](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L183)<!--/ref--> (lorebooks/anterograde amnesia)** <!--ref:r002-->[§1.1 In-Context Processing](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref-->: I deal with this daily using NovelAI as my personal creative-writing helper, and I can actually check how much of the old history is being cut off in its Context Viewer. Besides paying for a more expensive subscription with a bigger context window, my primary solution is lorebooks (which SillyTavern also uses). Lorebooks are dynamic memory systems that store background information, such as character details, world rules, and location names, and inject it into the story context when specific trigger words appear (NovelAI supports always-active entries too). This works a lot like the external memory aids people with anterograde amnesia rely on, similar to the notes in *Memento*. It also connects to cue-dependent retrieval in cognitive science: a trigger word acts as a cue that pulls the relevant memory into working memory only when it is needed. Since lore entries can be keyword-triggered retrieval, it is also a simple version of RAG (see the [Future Chapter notes](03-future-chapter.md) for the RAG connection).
 
@@ -14,11 +14,11 @@ Suggestions keyed to line numbers in `Transformers.tex` (chapter: Transformer Ar
 
 **<!--ref:r003-->[Line 190](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L190)<!--/ref--> (footnote on single-trial learning)** <!--ref:r004-->[§1.1 In-Context Processing](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref-->: The classic connectionist answer to this critique is complementary learning systems theory (McClelland, McNaughton and O'Reilly, 1995): fast single-trial learning is handled by a hippocampus-like system, and slow learning by the neocortex. The footnote's open question ("how psychologically or neurally realistic") also now has a direct study: Russin, Pavlick and Frank (PNAS) show that the trade-offs between in-context and in-weight learning in neural networks parallel trade-offs seen in human learning.
 
-### 1.3-1.4 Next-Word Prediction and Generating Conversations
+### <!--ref:r076-->[§1.3](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L239)<!--/ref-->–<!--ref:r077-->[§1.4](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L366)<!--/ref--> Next-Word Prediction and Generating Conversations
 
 **<!--ref:r005-->[Line 248](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L248)<!--/ref--> (footnote on next-word prediction)** <!--ref:r006-->[§1.3 Training Using Next-Word Prediction](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L239)<!--/ref-->: Beyond Elman, there is now neuroscience evidence that the brain itself predicts upcoming words. Goldstein et al. (*Nature Neuroscience*, 2022) found brain signals of next-word prediction before a word is heard, and argued that humans and autoregressive language models share computational principles. This would give the self-supervised training objective a cognitive science motivation, not only an engineering one, and it ties into predictive processing theories of the brain.
 
-### 1.6 LLMs and the Cognitive Sciences
+### <!--ref:r078-->[§1.6 LLMs and the Cognitive Sciences](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L713)<!--/ref-->
 
 **<!--ref:r007-->[Line 718](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L718)<!--/ref--> (comment: word norms not the most gripping example)** <!--ref:r008-->[§1.6 LLMs and the Cognitive Sciences](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L713)<!--/ref-->: Two recent studies could serve as more gripping openers, with the word-norm results kept as supporting detail:
 
@@ -33,7 +33,7 @@ Suggestions keyed to line numbers in `Transformers.tex` (chapter: Transformer Ar
 
 **<!--ref:r015-->[Lines 1223-1228](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1223-L1228)<!--/ref--> ("We are not yet aware of someone making this argument in print")** <!--ref:r016-->[§1.6.4 LLMs and Philosophy](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1100)<!--/ref-->: This sentence may now be out of date. Yang, Campbell, Huang, Wang, Cohen and Webb, "Emergent Symbolic Mechanisms Support Abstract Reasoning in Large Language Models" (ICML 2025), report a three-stage mechanism inside LLMs: symbol abstraction heads, symbolic induction heads, and retrieval heads. They argue that this helps resolve the symbolic-versus-neural debate, because reasoning in the network relies on emergent symbolic mechanisms. That is close to the argument the chapter predicts, so the sentence could cite it instead.
 
-### 1.7 LLMs in Practice
+### <!--ref:r079-->[§1.7 LLMs in Practice](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1270)<!--/ref-->
 
 Most notes for this section are in the [Future Chapter notes](03-future-chapter.md), since the plan is to move it into its own chapter.
 
@@ -43,25 +43,25 @@ Most notes for this section are in the [Future Chapter notes](03-future-chapter.
 
 ## General suggestions
 
-**Make working memory one running thread.** The chapter compares the context window to working memory in 1.1, returns to it with chain of thought in 1.7, and mentions Cowan in a comment. A consistent thread could run through the chapter: the capacity comparison (Cowan's four chunks), the serial-position effect in long contexts (*Lost in the Middle*), and the counterargument that models lack true internal working memory (Huang et al., 2025).
+**Make working memory one running thread.** The chapter compares the context window to working memory in <!--ref:r080-->[§1.1](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref-->, returns to it with chain of thought in <!--ref:r081-->[§1.7](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1270)<!--/ref-->, and mentions Cowan in a comment. A consistent thread could run through the chapter: the capacity comparison (Cowan's four chunks), the serial-position effect in long contexts (*Lost in the Middle*), and the counterargument that models lack true internal working memory (Huang et al., 2025).
 
-**Use prediction as a bridge between training and neuroscience.** Next-token prediction (1.3) and LLM-to-brain prediction (1.6.3) are currently far apart. Goldstein et al. (2022) and predictive processing theories could link them: the training objective resembles something the brain itself appears to do.
+**Use prediction as a bridge between training and neuroscience.** Next-token prediction (<!--ref:r082-->[§1.3](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L239)<!--/ref-->) and LLM-to-brain prediction (<!--ref:r083-->[§1.6.3](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1042)<!--/ref-->) are currently far apart. Goldstein et al. (2022) and predictive processing theories could link them: the training objective resembles something the brain itself appears to do.
 
-**Refresh the opening of 1.6 with more vivid findings.** Centaur and the theory-of-mind results are recent, widely discussed, and easy to explain, which suits the comment at <!--ref:r021-->[line 718](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L718)<!--/ref-->.
+**Refresh the opening of <!--ref:r084-->[§1.6](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L713)<!--/ref--> with more vivid findings.** Centaur and the theory-of-mind results are recent, widely discussed, and easy to explain, which suits the comment at <!--ref:r021-->[line 718](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L718)<!--/ref-->.
 
 **Update claims that time has overtaken.** Three spots stood out: the GPT-4 parameter count (unconfirmed), the "Illusion of the Illusion" rebuttal (self-described as a joke), and the "not yet in print" sentence (Yang et al., 2025).
 
-**Cross-reference the new chapter.** Once 1.7 moves, short pointers from 1.1 (memory), 1.6.3 (language network) and 1.6.4 (symbolic mechanisms) to the new chapter would keep the two chapters connected.
+**Cross-reference the new chapter.** Once <!--ref:r085-->[§1.7](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1270)<!--/ref--> moves, short pointers from <!--ref:r086-->[§1.1](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref--> (memory), <!--ref:r087-->[§1.6.3](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1042)<!--/ref--> (language network) and <!--ref:r088-->[§1.6.4](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1100)<!--/ref--> (symbolic mechanisms) to the new chapter would keep the two chapters connected.
 
 Possible case-study boxes for this chapter:
 
 | Case study | Section | Cognitive-science link |
 |---|---|---|
-| Lorebooks in NovelAI and SillyTavern | 1.1 | Cue-dependent retrieval; memory aids in anterograde amnesia |
-| Lost in the Middle | 1.1 | Primacy and recency effects |
-| GPT-4 and the faux pas test | 1.6.2 | Theory of mind; caution versus inability |
-| Sentences that drive or suppress the language network | 1.6.3 | Language network; encoding models |
-| Emergent symbol abstraction heads | 1.6.4 | Symbolic versus connectionist debate |
+| Lorebooks in NovelAI and SillyTavern | <!--ref:r089-->[§1.1](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref--> | Cue-dependent retrieval; memory aids in anterograde amnesia |
+| Lost in the Middle | <!--ref:r090-->[§1.1](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L154)<!--/ref--> | Primacy and recency effects |
+| GPT-4 and the faux pas test | <!--ref:r091-->[§1.6.2](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L819)<!--/ref--> | Theory of mind; caution versus inability |
+| Sentences that drive or suppress the language network | <!--ref:r092-->[§1.6.3](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1042)<!--/ref--> | Language network; encoding models |
+| Emergent symbol abstraction heads | <!--ref:r093-->[§1.6.4](https://github.com/simbrain/NeuralNetworksCogSciBook/blob/1371c5da040ff388fde37e438f47b625a71e13f8/Transformers.tex#L1100)<!--/ref--> | Symbolic versus connectionist debate |
 
 ## Sources
 

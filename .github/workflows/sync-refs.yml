@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # for the "references need attention" issue in this repository
 
 concurrency:
   group: sync-refs
@@ -89,7 +90,8 @@ jobs:
         if: steps.upstream.outputs.skip == 'false'
         run: |
           python3 scripts/sync_refs.py --upstream "$RUNNER_TEMP/book" \
-            --rev "${{ steps.upstream.outputs.sha }}" --summary-file "$RUNNER_TEMP/summary.txt"
+            --rev "${{ steps.upstream.outputs.sha }}" --summary-file "$RUNNER_TEMP/summary.txt" \
+            --attention-file "$RUNNER_TEMP/attention.md"
 
       - name: Commit and push if anything changed
         if: steps.upstream.outputs.skip == 'false'
@@ -109,3 +111,33 @@ jobs:
           # the next run starts from the new state and redoes the sync.
           git rebase --abort 2>/dev/null || true
           echo "::warning::Push skipped because the notes changed during the run; the next run will retry."
+
+      # Keeps one issue in this repository up to date. GitHub emails you (the
+      # repository owner) when it opens and when new flags are added as a
+      # comment. It only ever touches this repository, never the book's.
+      - name: Open, update or close the "references need attention" issue
+        if: steps.upstream.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          label="references need attention"
+          body="$RUNNER_TEMP/attention.md"
+          gh label create "$label" --color FBCA04 \
+            --description "Opened by the sync workflow when book references need a look" --force >/dev/null
+          number=$(gh issue list --label "$label" --state open --json number --jq '.[0].number // empty')
+
+          if [ -s "$body" ]; then
+            new_ids=$(grep -o -m1 '<!-- ids: [^>]*-->' "$body" | sed 's/<!-- ids: //; s/ -->//')
+            if [ -z "$number" ]; then
+              gh issue create --title "Some book references need a look" --label "$label" --body-file "$body"
+            else
+              old_ids=$(gh issue view "$number" --json body --jq .body | grep -o -m1 '<!-- ids: [^>]*-->' | sed 's/<!-- ids: //; s/ -->//' || true)
+              gh issue edit "$number" --body-file "$body"
+              added=$(comm -13 <(tr ' ' '\n' <<<"$old_ids" | sort) <(tr ' ' '\n' <<<"$new_ids" | sort) | grep . | tr '\n' ' ' || true)
+              if [ -n "$added" ]; then
+                gh issue comment "$number" --body "Newly flagged after the latest book update: \`${added% }\`. See the table above."
+              fi
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment "Every reference is located confidently again, so this issue is closed."
+          fi

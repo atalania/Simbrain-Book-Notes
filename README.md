@@ -37,6 +37,7 @@ Type a short tag in any file under `notes/`:
 | `[[L:Transformers.tex:183]]` | [Line 183](#) (capital L, for the start of a note) |
 | `[[l:AI_Alignment.tex:344-422]]` | [lines 344-422](#) (lower-case l, for mid-sentence) |
 | `[[§:Transformers.tex:183]]` | [§1.1 In-Context Processing](#) (the section that contains that line) |
+| `[[s:Transformers.tex:183]]` | [§1.1](#) (just the section number, for prose such as "see §1.1") |
 | `[[L:Transformers.tex:183@1371c5d]]` | Same, but "line 183 as it was in commit `1371c5d`" |
 
 Use the `@commit` form when the line number came from an older copy of the book (for example, an old PDF or a local checkout you haven't updated). Otherwise the tag is read against the newest version of the book.
@@ -63,6 +64,8 @@ The `<!--ref:…-->` comments are invisible on GitHub, and they are how the scri
 | ⚠️ | The passage was rewritten in place, or only a weak match was found | Open the link and check it. |
 | ↪️ | Found in a different `.tex` file | Usually right (for example, a section that moved to a new chapter). Check it once. |
 | ❌ | Could not be found | The text was probably deleted. That often means your suggestion was taken up, so it is worth a look. |
+
+When anything is flagged, the workflow opens an issue called **"Some book references need a look"** in this repository, so GitHub emails you. The issue lists the flagged references, gets a new comment if more are flagged later, and closes itself once nothing is flagged. It never posts anywhere else, and text quoted from the book is shown as code, so a stray `@name` in the book can't notify anyone.
 
 Flags stay until you clear them, even if later book edits make the match certain again, so nothing is dropped before you have looked at it. [STATUS.md](STATUS.md) lists every flagged reference with its id (such as `r017`). After checking:
 
@@ -101,6 +104,7 @@ python3 scripts/sync_refs.py --upstream ../book
 ```
 notes/                      the notes, one file per chapter
 images/                     pictures used in the notes
+sources.bib                 BibTeX entries for the sources cited in the notes
 STATUS.md                   generated: where every reference points now
 .refs/refs.json             generated: fingerprints and positions of every reference
 scripts/sync_refs.py        the tracker

@@ -8,6 +8,7 @@ You write a reference in a note using a short tag, for example
     [[L:Transformers.tex:183]]          ->  "Line 183"   (capital L)
     [[l:AI_Alignment.tex:344-422]]      ->  "lines 344-422" (lower-case l)
     [[§:Transformers.tex:183]]          ->  "§1.1 In-Context Processing"
+    [[s:Transformers.tex:183]]          ->  "§1.1" (section number only, for prose)
     [[L:Transformers.tex:183@1371c5d]]  ->  same, but "line 183 as of commit 1371c5d"
 
 The first time this script sees a tag it gives it an id, stores a fingerprint
@@ -49,7 +50,7 @@ STATUS_PATH = ROOT / "STATUS.md"
 ACCEPT_PATH = ROOT / "accept.txt"
 
 SHORT_RE = re.compile(
-    r"\[\[(?P<kind>[Ll§]):(?P<file>[^\]\s:@]+\.tex):(?P<start>\d+)(?:-(?P<end>\d+))?"
+    r"\[\[(?P<kind>[Ll§s]):(?P<file>[^\]\s:@]+\.tex):(?P<start>\d+)(?:-(?P<end>\d+))?"
     r"(?:@(?P<commit>[0-9a-fA-F]{7,40}))?\]\]"
 )
 TRACKED_RE = re.compile(r"<!--ref:(?P<id>r\d+)-->(?P<body>.*?)<!--/ref-->", re.S)
@@ -336,10 +337,13 @@ def render(ref: dict, cfg: dict, up: Upstream, head: str) -> str:
             return f"{word}{plural} {span} (since removed from the book)"
         return f"{word}{plural} {span} ❌ (not found upstream — see STATUS.md)"
 
-    if kind == "§":
+    if kind in ("§", "s"):
         lines = up.lines(head, file) or []
         chap = str(cfg.get("chapter_numbers", {}).get(file, cfg.get("default_chapter_number", "1")))
         label, heading_line = section_at(lines, start, chap)
+        if kind == "s":  # short form: just "§1.6.3" (an unnumbered heading keeps its title)
+            m = re.match(r"§(\d[\d.]*) ", label)
+            label = f"§{m.group(1)}" if m else label
         if moved_note:
             label += f" ({file})"
         return f"[{label}]({permalink(cfg, head, file, heading_line, None)}){flag}"
@@ -388,6 +392,8 @@ def main() -> int:
     ap.add_argument("--upstream", required=True, type=Path, help="path to a clone of the book repo")
     ap.add_argument("--rev", default=None, help="upstream revision to sync to (default: config branch)")
     ap.add_argument("--summary-file", type=Path, help="write a one-line summary here (for commit messages)")
+    ap.add_argument("--attention-file", type=Path,
+                    help="write a GitHub issue body listing flagged references here (empty file if none)")
     args = ap.parse_args()
 
     cfg = load_json(CONFIG_PATH, {})
@@ -511,6 +517,8 @@ def main() -> int:
     REGISTRY_PATH.parent.mkdir(exist_ok=True)
     REGISTRY_PATH.write_text(json.dumps(registry, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     write_status(cfg, up, head, refs, used, problems)
+    if args.attention_file:
+        args.attention_file.write_text(issue_body(cfg, head, refs, used, problems), encoding="utf-8")
 
     statuses = [refs[r]["status"] for r in used if r in refs]
     review = sum(s in ("review", "moved-file") for s in statuses)
@@ -526,6 +534,43 @@ def main() -> int:
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as fh:
             fh.write(f"### {summary}\n\n" + "".join(f"- {p}\n" for p in problems))
     return 0
+
+
+def issue_body(cfg, head: str, refs: dict, used: dict, problems: list[str]) -> str:
+    """Body for the 'references need attention' issue; empty when nothing is flagged.
+
+    Text quoted from the book goes inside `code` spans, where GitHub does not turn
+    @names into mentions or #numbers into issue links, so the issue can never
+    notify anyone else.
+    """
+    flagged = [r for r in sorted(used) if r in refs and refs[r]["status"] in ("review", "moved-file", "lost")]
+    if not flagged and not problems:
+        return ""
+    labels = {"review": "⚠️ check", "moved-file": "↪️ moved file", "lost": "❌ not found"}
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    status_link = f"https://github.com/{repo}/blob/main/STATUS.md" if repo else "STATUS.md"
+
+    def code(s: str) -> str:
+        s = s.replace("`", "'").replace("|", "\\|")
+        return f"`{s[:87] + '…' if len(s) > 90 else s}`" if s else ""
+
+    out = [f"<!-- ids: {' '.join(flagged)} -->",
+           f"After the book changed (now at `{head[:7]}`), these references in the notes need a look. "
+           f"Open each link in [STATUS.md]({status_link}) and check it.", "",
+           "- **The link is right** (or, for ❌, the passage really is gone): add the id to `accept.txt`.",
+           "- **The link is wrong:** replace its `<!--ref:…-->…<!--/ref-->` in the note with a fresh `[[L:File.tex:line]]` tag.",
+           "", "This issue updates itself and closes once nothing is flagged.", ""]
+    if flagged:
+        out += ["| Ref | Note | Originally | Status | Text it was anchored to |", "|---|---|---|---|---|"]
+        for rid in flagged:
+            ref = refs[rid]
+            o = ref["orig"]
+            span = f"{o['start']}" + (f"-{o['end']}" if o.get("end") else "")
+            out.append(f"| `{rid}` | `{used[rid]}` | `{o['file']}:{span}` | {labels[ref['status']]} | "
+                       f"{code(o.get('text', ref['fp_start'][1]))} |")
+    if problems:
+        out += ["", "**Tags that could not be registered:**", *[f"- {code(p)}" for p in problems]]
+    return "\n".join(out) + "\n"
 
 
 def write_status(cfg, up: Upstream, head: str, refs: dict, used: dict, problems: list[str]) -> None:
