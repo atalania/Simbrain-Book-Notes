@@ -1,21 +1,20 @@
 name: Sync line references with the book
 
-# Low-profile design: the book repository is only contacted with git when it
-# actually has a new commit.
-#  - Every run first asks the GitHub API for the book's latest commit id. API
-#    calls are not counted as clones or visits in the book's traffic statistics.
-#  - Scheduled runs stop right there if the book has not changed.
-#  - The book's clone is kept in this repository's Actions cache. When the book
-#    changes, the cached copy is brought up to date with one incremental fetch
-#    instead of a fresh clone. Runs triggered by your own edits to the notes
-#    reuse the cache and do not touch the book repository at all.
-#  - A full (not partial) clone is used, so the sync script never has to
-#    download extra file contents on demand.
+# Low-profile, low-noise design:
+#  - Every run first asks the GitHub API for the book's latest commit id and,
+#    if it is new, which files changed (scripts/decide_sync.py). API calls are
+#    not counted as clones or visits in the book's traffic statistics.
+#  - Scheduled runs stop there unless a new book commit changed one of the .tex
+#    files your notes reference. Commits to other chapters are ignored, so your
+#    links stay as they are (unchanged files keep their line numbers).
+#  - The book's clone is kept in this repository's Actions cache and brought up
+#    to date with one incremental fetch, instead of a fresh clone.
+#  - Runs you start yourself (pushing notes, "Run workflow") always sync.
 
 on:
-  # Check the book for new commits every 15 minutes (GitHub may run these a few minutes late).
+  # Check the book once an hour, at 17 minutes past (GitHub delays jobs queued exactly on the hour).
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 * * * *"
   # Run right away whenever you push a change to the notes, so new [[L:...]] tags are registered.
   push:
     branches: [main]
@@ -40,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Ask the GitHub API for the book's latest commit
+      - name: Ask the GitHub API whether the book changed anything the notes reference
         id: upstream
         env:
           GH_TOKEN: ${{ github.token }}
@@ -48,15 +47,9 @@ jobs:
           repo=$(python3 -c 'import json; print(json.load(open("config.json"))["upstream_repo"])')
           branch=$(python3 -c 'import json; print(json.load(open("config.json")).get("upstream_branch", "main"))')
           sha=$(gh api "repos/$repo/commits/$branch" --jq .sha)
-          known=$(python3 -c 'import json, os; p=".refs/refs.json"; print(json.load(open(p)).get("upstream_commit", "") if os.path.exists(p) else "")')
           echo "repo=$repo" >> "$GITHUB_OUTPUT"
           echo "sha=$sha" >> "$GITHUB_OUTPUT"
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$sha" = "$known" ]; then
-            echo "The book is still at ${sha:0:7}; nothing to do."
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          fi
+          python3 scripts/decide_sync.py --event "${{ github.event_name }}" --repo "$repo" --sha "$sha"
 
       - name: Restore the cached copy of the book
         if: steps.upstream.outputs.skip == 'false'

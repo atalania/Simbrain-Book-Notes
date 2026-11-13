@@ -1,6 +1,6 @@
 # Optional: instant sync when the book changes
 
-By default the notes repo checks the book every 15 minutes. That is as close to "real time" as you can get from your side alone, because GitHub only tells a repository about pushes to that same repository.
+By default the notes repo checks the book once an hour. That is as close to "real time" as you can get from your side alone, because GitHub only tells a repository about pushes to that same repository.
 
 If the book's maintainers are happy to help, they can make the book repo ping this repo on every push. The sync then starts within seconds.
 
@@ -39,4 +39,4 @@ jobs:
             -d '{"event_type":"book-updated"}'
 ```
 
-The notes repo's workflow already listens for the `book-updated` event, so nothing else needs to change on your side. The 15-minute schedule can stay as a backup.
+The notes repo's workflow already listens for the `book-updated` event, so nothing else needs to change on your side. The hourly schedule can stay as a backup. Pings for commits that don't touch your chapters are ignored, just like on the schedule.
